@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #020202;
+  background-color: #080e2c;
 }
 
 html {
@@ -34,13 +34,13 @@ html {
 
 .navigation__item {
   text-decoration: none;
-  color: #333;
+  color: #9c9c9c;
   margin-left: 24px;
   font-size: 1.8rem;
 }
 
 .navigation__item:hover {
-  color: #bdbdbd;
+  color: #19ffba;
 }
 
 .navigation__item:first-child {
@@ -48,7 +48,7 @@ html {
 }
 
 .navigation__item--active {
-  color: #bdbdbd;
+  color: #19ffba;
 }
 
 .navigation__button {
@@ -79,7 +79,7 @@ html {
 }
 
 .description {
-  color: #828282;
+  color: #d8e8e4;
   margin-top: 24px;
   margin-bottom: 40px;
   font-size: 1.8rem;
@@ -92,9 +92,10 @@ html {
 
 .main--img img {
   width: 100%;
-  max-width: 450px;
+  max-width: 380px;
   height: auto;
-  filter: drop-shadow(0 0 1px #19ffba);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 30px rgba(25, 255, 186, 0.5));
 }
 
 .play-button {
@@ -137,7 +138,7 @@ html {
   margin-right: 12px;
 }
 .socials__items:hover {
-  color: #333;
+  color: #19ffba;
 }
 
 .menu-button {
@@ -155,7 +156,7 @@ html {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #020202;
+  background-color: #080e2c;
   padding: 24px;
   display: none;
   z-index: 10;
@@ -184,21 +185,22 @@ html {
 .mobile-navigation__item {
   text-decoration: none;
   font-size: 2rem;
-  color: #333;
+  color: #9c9c9c;
   display: block;
   margin-bottom: 24px;
 }
 
 .mobile-navigation__item--active {
-  color: #bdbdbd;
+  color: #ffffff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .main {
     display: block;
   }
 
   .container {
+    grid-template-rows: auto auto auto;
     gap: 40px;
   }
 
@@ -214,7 +216,7 @@ html {
   .main--img {
     flex: 1;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 10rem;
   }
 
   .navigation {
@@ -230,5 +232,12 @@ html {
   .footer {
     justify-content: space-between;
     padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .play-button {
+    width: 100%;
+    justify-content: center;
   }
 }
